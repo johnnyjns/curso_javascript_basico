@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<head>
+    <title>IFs Encadeados</title>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+
+    <script>
+        var salarioMensal = 2500;
+        if (salarioMensal > 0 && salarioMensal < 1000) {
+            var bonus = salarioMensal * 0.05;
+
+            console.log("Salario maior que zero e menor que 1000");
+
+            console.log(bonus);
+        } else if (salarioMensal < 2000) {
+                var bonus = salarioMensal * 0.10;
+                console.log('Não caiu na anterior, salario menor que 2000');
+                console.log(bonus);
+        } else {
+            var bonus = salarioMensal * 0.15;
+            console.log('Não caiu em nenhuma das outras');
+            console.log(bonus);
+        }
+    </script>
+</body>
+<!-- <script src="calculaImc.js"></script> -->
