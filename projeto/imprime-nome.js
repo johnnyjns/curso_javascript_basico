@@ -25,10 +25,5 @@ for (var posicaoAtual = 0; posicaoAtual <= trsPacientes.length -1; posicaoAtual+
                             }
                         };
 
-    var imc = pacienteAtual.pegaImc();
-
-    var tdImc = pacienteTr.getElementsByClassName("info-imc")[0];
-    tdImc.textContent = imc.toFixed(2);
-
-    console.log(imc.toFixed(2));
+    console.log(pacienteAtual.nome);
 }
