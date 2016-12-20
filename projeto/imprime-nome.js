@@ -1,30 +1,28 @@
 var trsPacientes = document.getElementsByClassName("paciente"); // array de <tr>s
 
-for (var posicaoAtual = 0; posicaoAtual <= trsPacientes.length -1; posicaoAtual++) {
-
-    var pacienteTr = trsPacientes[posicaoAtual];
+percorreArray(trsPacientes, function (pacienteTr){
 
     var tdNome = pacienteTr.getElementsByClassName("info-nome")[0];
     var tdPeso = pacienteTr.getElementsByClassName("info-peso")[0];
     var tdAltura = pacienteTr.getElementsByClassName("info-altura")[0];
 
     var pacienteAtual = {   nome : tdNome.textContent,
-                            peso : tdPeso.textContent,
-                            altura : tdAltura.textContent,
-                            pegaImc : function(){
+        peso : tdPeso.textContent,
+        altura : tdAltura.textContent,
+        pegaImc : function(){
 
-                                if(this.altura !== 0){
+            if(this.altura !== 0){
 
-                                    var imc = this.peso / ( this.altura * this.altura );
-                                    return imc;
+                var imc = this.peso / ( this.altura * this.altura );
+                return imc;
 
-                                } else {
+            } else {
 
-                                    console.log('Informa o valor da altura.');
+                console.log('Informa o valor da altura.');
 
-                                }
-                            }
-                        };
+            }
+        }};
 
-    console.log(pacienteAtual.nome);
-}
+        console.log(pacienteAtual.nome);
+
+});
