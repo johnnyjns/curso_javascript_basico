@@ -13,7 +13,8 @@ percorreArray(trsPacientes, function(pacienteTr){
 
             if(this.altura !== 0){
 
-                return imc = this.peso / ( this.altura * this.altura );
+                var imc = this.peso / ( this.altura * this.altura );
+                return imc;
 
             } else {
 
@@ -30,7 +31,3 @@ percorreArray(trsPacientes, function(pacienteTr){
 
     console.log(imc.toFixed(2));
 });
-
-for (var posicaoAtual = 0; posicaoAtual <= trsPacientes.length -1; posicaoAtual++) {
-
-}
