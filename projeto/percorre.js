@@ -6,11 +6,4 @@ function percorreArray(trsPacientes, comportamento){
         var pacienteTrAtual = trsPacientes[posicaoAtual];
         comportamento(pacienteTrAtual);
     }
-=======
-function percorreArray(trsPacientes){
-
-  for (var posicaoAtual = 0; posicaoAtual <= trsPacientes.length -1; posicaoAtual++) {
-
-  }
->>>>>>> Stashed changes
 }
