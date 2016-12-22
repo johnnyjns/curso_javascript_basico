@@ -1,4 +1,6 @@
-function calculaTodosImcs(){
+var btn = document.getElementById('calcula-imcs');
+
+btn.addEventListener('click', function (){
 
     var trsPacientes = document.getElementsByClassName("paciente"); // array de <tr>s
 
@@ -33,4 +35,4 @@ function calculaTodosImcs(){
 
         console.log(imc.toFixed(2));
     });
-}
+});
